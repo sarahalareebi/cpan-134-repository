@@ -1,13 +1,16 @@
+.glam {
+    font-family: 'GlamFont', Arial, sans-serif;
+    display: block;
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 @font-face {
     font-family: 'GlamFont';
-    src: url('fonts/AMORIA.otf') format('truetype');
-    font-weight: normal;
+src: url('/fonts/AMORIA.otf') format('opentype'); font-weight: normal;
     font-style: normal;
-}
-h1 {
-    font-family: 'Amoria', serif;
-    font-size: 48px;
-    text-align: center;
+
 }
 .glam {
     font-family: 'GlamFont', Arial, sans-serif;
