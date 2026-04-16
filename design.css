@@ -1,0 +1,24 @@
+body {
+    background-color: #f5e6ff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: #b300ff;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b300ff;
+}
+
+p {
+    margin-top: 20px;
+}
