@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* RESET */
 body {
     margin: 0;
@@ -107,3 +108,61 @@ h2 {
 p {
     margin-bottom: 20px;
 }
+=======
+/ + html style */
+html {
+
+
+    background-color: cornsilk;
+
+}
+
+
+/* Body style */ 
+body {
+
+background-color: mediumorchid;
+width; 800px;
+border: 2px solid black;
+}
+
+/* Header style */
+header { 
+    height: 140px;
+    background-color: lightblue;
+    border-bottom: 2px solid black;
+}
+
+/ * website logo style */
+header img {
+    width: 90px;
+    height: 90px;
+
+    float: left;
+}
+
+
+header h1 {
+    font-style:italic;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow:5px, 6px, 4px, grey;
+}
+
+nav ul {
+    list-style-type: none;
+}
+nav ul li a {
+    text-decoration: none;
+}
+/* Footer style */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+    footer p {
+
+    }
+}
+>>>>>>> hiori-branch
