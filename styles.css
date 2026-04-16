@@ -48,7 +48,7 @@ src: url('/fonts/AMORIA.otf') format('opentype'); font-weight: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Times New Roman" Times, Serif;
+    font-family: "Times New Roman", Times, Serif;
 }
 
 html, body {
@@ -59,6 +59,7 @@ body {
    display: flex;
    flex-direction: column;
    min-height: 100vh;
+   font-family: 'Times new roman', serif;
 }
 
 main {
@@ -278,10 +279,6 @@ nav ul li a:hover::after {
 .content p {
   font-size: 14px;
   line-height: 1.6;
-}
-
-body {
-  font-family: 'Times new roman', serif;
 }
 
 .site-header h1 {
