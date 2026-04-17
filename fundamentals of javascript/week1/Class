@@ -1,0 +1,19 @@
+// Exercise 1: Variable Declaration
+// Declare a variable name using var, assign it as a value, and then change its value. Print both values.
+console.log('Exercise 1');
+var name = 'Shomoy';
+console.log(name);
+name = 'James';
+console.log(name);
+
+// Declare a variable age using let, assign it as a value, update it, then print the updated value.
+let age = 23;
+age = 18;
+console.log(age);
+
+// Declare a constant isStudent using const and try assigning it to a new value. Observe the 
+const isStudent = true;
+isStudent = false;
+
+
+// Any other instructions highlighted in green that aren't finished are in Blackboard for further assistance.
