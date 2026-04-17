@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 8 - James</title>
+    </head>
+    <body>
+        <h1>Click the button!</h1>
+        <button id="t1Button">Click Me!</button>
+        <script>
+            let t1btn = document.getElementById('t1Button');
+            t1btn.addEventListener('click', function(){
+t1btn.textContent = 'Clicked!'
+            });
+        </script>
+
+        <h1>Task 2</h1>
+        <div id="hoverDiv" style="padding: 20px; margin-top: 10px; border: 1px solid #000">
+            Hover over me
+        </div>
+        <script>
+            var hoverDiv = document.getElementById('hoverDiv');
+            hoverDiv.addEventListener('mouseenter', function(){
+                this.style.backgroundColor = 'lightblue';
+            });
+            hoverDiv.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = 'transparent';
+            });
+        </script>
+        <h1>Task 3</h1>
+        <input type="text"  placeholder="Type something" id="t3Input">
+        <script>
+            document.getElementById('t3Input').addEventListener('keyup', function(e){
+                console.log(e.key);
+            });
+        </script>
+        <h1>Task 4</h1>
+        <form id="userProfileForm">
+            <input id="userName" type="text" placeholder="Enter Username">
+            <button type="submit">Submit</button>
+            <script>
+                let userName = document.getElementById('userName');
+                document.getElementById('userProfileForm').addEventListener('submit', function(e){
+                    e.preventDefault();
+                    console.log(userName.value);
+                })
+            </script>
+        </form>
+        <h1>Task 5</h1>
+            <input id="t5Input" type="text" placeholder="Focus on Me">
+            <script>
+                let inputField = document.getElementById('t5Input');
+                inputField.addEventListener('focus', function(){
+                    this.style.backgroundColor = 'yellow';
+                });
+                inputField.addEventListener('blur', function(){
+                    this.style.backgroundColor = 'salmon';
+                });
+            </script>
+            <h1>Task 6</h1>
+            <ul id="myList">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+            <script>
+                let myList = document.getElementById('myList');
+                myList.addEventListener('click', function(e){
+                  if (e.target.tagName === 'LI'){
+                  e.target.style.backgroundColor = 'pink';
+                }
+                });
+            </script>
+    </body>
+    </html>

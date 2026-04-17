@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="800" height="600" style="border: 2px solid black">
+    </canvas>
+
+    <script>
+        let canvas = document.getElementById('myCanvas');
+        let ctx = canvas.getContext('2d');
+        let circle1 = {x: 250, y:250, radius: 50, color: red};
+
+        function drawCircle () {
+        ctx.beginPath();
+        ctx.arc(circle1.x, circle1.y, circle1.radius, 0, Math.PI*2);
+        ctx.fillStyle = circle1.color;
+        ctx.fill();
+        }
+        drawCircle();
+
+        document.addEventListener('keydown', function (e){
+            if(e.key === 'ArrowUp') circle1.y -= 10;
+            drawCircle();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Example</title>
+</head>
+<body>
+<button id="getList">Get List</button>
+<table id="uniList"></table>
+<script>
+    document.getElementById('getList').addEventListener('click', function(){
+        fetch('http://universities.hipolabs.com/search?country=canada')    
+        .then(response =>{ 
+            if(!response.ok){
+                throw new Error("An error occurred");
+            }
+            return response.json();
+        })
+        .then(data => {
+            data.forEach(e => {
+                    document.getElementById('uniList').innerHTML += 
+            `<tr>
+                <td>${e.name}</td>
+                <td>${e["state-province"]}</td>
+                <td>${e.domains[0]}</td>
+            </tr>`
+        });
+            })
+        });
+</script>
+</body>
+</html>

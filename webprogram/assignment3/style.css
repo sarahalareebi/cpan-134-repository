@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b0f14;
+    color: #e6e6e6;
+}
+
+header img {
+    width: 150px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* NAV */
+nav {
+    background-color: black;
+    padding: 15px;
+    border-bottom: 2px solid #3ad1ff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #e6e6e6;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #3ad1ff;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #111827, #0b0f14);
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #aaaaaa;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: #3ad1ff;
+}
+
+h2 {
+    color: #3ad1ff;
+}
+
+.project {
+    background-color: #111827;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #3ad1ff;
+    border-radius: 5px;
+}
+
+.container img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.project-img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #111827;
+    border: 1px solid #333;
+    color: white;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #3ad1ff;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2aa6d1;
+}
+
+div img {
+    width: 100px;
+    margin-top: 0;
+}

@@ -1,0 +1,53 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab 7: HTML and CSS Basics</title>
+<style>
+    body {background-color: #f0f0f0;}
+    h1 {
+        font-size: 2em;
+        color: #333;
+    }
+    p {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+    li {
+        padding: 5px;
+        background-color: #ddd;
+    }
+</style>
+</head>
+<body>
+    <h1>Welcome to CSS and HTML basics.</h1>
+<p>This is the placeholder text for Shomoy's Lab 7.</p>
+
+<ul id="ulist">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+<button id="changeBk">Change Background</button>
+<button id="addNew">Add New</button>
+<script>
+
+
+// Task 4.
+document.getElementById('changeBk').addEventListener('click', ()=>{
+document.body.style.backgroundColor = 'salmon';
+});
+
+// Task 5.
+let addNew = document.getElementById('addNew');
+addNew.addEventListener('click', addItem);
+function addItem(){
+    let newItem = document.createElement('li');
+    newItem.textContent = "New Item";
+    document.getElementById('ulist').appendChild(newItem);
+}
+
+</script>
+</body>
+</html>
